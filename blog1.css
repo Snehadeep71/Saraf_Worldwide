@@ -1,0 +1,149 @@
+.blog1 {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    height: auto; 
+   
+}
+
+.blog1 h1 {
+    position: relative;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.blog1 h1::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    bottom: -12px;
+    left: 0;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+
+.part1, .part2, .part3, .part4, .part5, .part6 {
+    max-width: 1400px;
+}
+
+h2 {
+    font-size: 3rem;
+    display: flex;
+    position: relative;
+    display: inline-block;
+}
+ h2::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(246, 226, 111);
+    
+    bottom: -12px;
+    left: 0;
+    visibility: visible;
+   
+}
+
+h3 {
+    margin: 10px;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: right; /* Ensure text is aligned to the right */
+    justify-content: left;
+    line-height: 2;
+    padding: 30px;
+}
+
+/* Specific CSS for the "Our Services" section */
+.part4 .point-section h3 {
+    text-align: left; /* Ensure the text is aligned to the left */
+    padding: 0 20px; /* Add some padding for better readability */
+}
+
+.part4 .point-section p {
+    text-align: right; /* Ensure the text is aligned to the right */
+    padding: 0 20px; /* Add some padding for better readability */
+}
+
+@media (min-width: 375px) {
+    .blog1 {
+        height: auto;
+    }
+    .blog1 h1 {
+        font-size: 2.5rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 2rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    p {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+    .blog1 {
+        height: auto;
+        width: inherit  ;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 430px) {
+    .blog1 {
+        height: auto;
+        width: inherit;
+    }
+    p {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Additional CSS for larger screens */
+@media (min-width: 1024px) {
+    .part4 .point-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+    }
+    .part4 .point-section h3 {
+        width: 100%;
+        text-align: left; /* Ensure the text is aligned to the left */
+        padding-left: 0; /* Remove padding for better alignment */
+    }
+    .part4 .point-section p {
+        width: 100%;
+        text-align: right; /* Ensure the text is aligned to the right */
+        padding-right: 0; /* Remove padding for better alignment */
+    }
+}

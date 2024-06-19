@@ -1,0 +1,114 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+    background-color: #fff2fe;
+
+}
+body{
+    background-color: #8fc3eb;
+    /* background-color: #0079c1; */
+    /* background-color: rgb(245, 234, 234); */
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+     /* text-transform: capitalize; */
+    color: #444;
+}
+
+.blog .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: (minmax(30rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.blog .box-container .box:hover .pic img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.blog .box-container .box .shadow {
+    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+}
+
+.blog .box-container .box .pic {
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog .box-container .box .pic img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.blog .box-container .box .pic h3 {
+    background-color: #fff;
+    color: #444;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+}
+
+.blog .box-container .box .pic h3 i {
+    color: #bd18b4;
+
+}
+
+.blog .box-container .box .content3 {
+    padding: 2rem;
+    background-color: #fff;
+
+}
+
+.blog .box-container .box .content3 h3 {
+    font-size: 3rem;
+    color: black;
+
+}
+
+.blog .box-container .box .content3 p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid #bd18b4;
+    background: #fff2fe;
+    color: #bd18b4;
+    cursor: pointer;
+     /* text-transform: capitalize; */
+}
+
+.btn:hover {
+    background-color: #bd18b4;
+    color: #fff2fe;
+}

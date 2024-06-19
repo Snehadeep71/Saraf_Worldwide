@@ -1,0 +1,53 @@
+/*------------------why choose us section css starts here-----------------------*/
+.expertise-section {
+    height: 100vh;
+    background-color: rgb(245, 234, 234);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.expertise-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.expertise-content h2 {
+    font-size: 1.9rem;
+    color: #012169;
+    margin-bottom: 30px;
+}
+
+.expertise-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.stat-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+.stat-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.stat-number {
+    font-size: 20px;
+    color: #0079c1;
+    /* color: #007BFF; */
+    font-weight: bold;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: black;
+    /* color: #555; */
+    margin-top: 10px;
+}

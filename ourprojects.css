@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+html{
+    overflow-x: hidden;
+    background-color: #fff;
+}
+body{
+    color: black;
+    font-family: sans-serif;
+    background-color: #8fc3eb;
+
+}
+.sec1{
+    height: 100vh;
+    width: 100%;
+   
+    display: flex;
+    background: url('/images/ourprojects2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-container{
+    align-items: left;
+    justify-content: center;
+    max-width: 600px;
+}
+.sec-container h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 20%;
+    text-align: center;
+    justify-content: center;
+    color: #012169;
+}
+.sec1 .sec-container p{
+    color: #0079c1;
+    font-weight: bold;
+}
+.sec-container h1::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .sec-container h1::after{ /*-------dash placed under the heading -------------------*/
+    top: 12rem;
+ }
+.sec-container p{
+    padding: 25px;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    display: flex;
+}
+/*-------------sec 2 css starts here-----------------*/
+.sec2{
+    background-color: #8fc3eb;
+    /* background-color: rgb(245, 234, 234); */
+    padding: 5rem 10%;
+}
+.sec2 .section2-title{
+    text-align: center;
+     /* text-transform: capitalize; */
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #012169;
+    font-weight: bold;
+}
+.sec2 .sec2-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: (minmax(30rem,1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.sec2-container .sec2-box img{
+    background-size: cover;
+    background-size: cover;
+}
+.sec2-container .sec2-box img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.sec2 .sec2-container .sec2-box .shadow{
+    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+    
+}
+.sec2 .sec2-container .sec2-box{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+.content4 {
+    height: 50px;
+    width: 100%; /* Ensure content4 spans the full width of the card */
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the bottom */
+    align-items: center;
+    transition: height 0.5s, background 0.5s;
+    bottom: 0; /* Ensure it's always at the bottom */
+ }
+ 
+ .content4 h1 {
+    display: flex;
+    color: rgb(240, 66, 66);
+    margin: 10px;
+    position: relative;
+    height: auto;
+    font-size: 40px;
+    opacity: 0;
+    visibility: hidden;
+ }
+ 
+ .content4 p {
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+ }
+ 
+ .content4 span {
+    font-weight: bold;
+ }
+ 
+ .sec2-box:hover {
+    cursor: pointer;
+ }
+ 
+ .sec2-box:hover .content4 {
+    height: 220px;
+    background: black;
+ }
+ 
+ .sec2-box:hover p {
+    opacity: 1;
+    visibility: visible;
+ }
+ .sec2-box:hover h1 {
+    opacity: 1;
+    visibility: visible;
+ }
+/*-------------sec 2 css ends here-----------------*/
