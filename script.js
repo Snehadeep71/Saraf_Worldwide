@@ -63,3 +63,7 @@ ScrollReveal().reveal('.service-column',{delay:350,margin:"bottom",interval:200}
 ScrollReveal().reveal('.row',{delay:400,margin:"bottom",interval:200});
 // ScrollReveal().reveal('.col',{delay:450,margin:"bottom",interval:200});
 // ScrollReveal().reveal('.col,.service-footer-subsection',{delay:450,margin:"bottom",interval:200});
+<script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-9e61bd6e-1f0b-45aa-aec0-bf58a9a2262e" data-elfsight-app-lazy></div>
+</script>
