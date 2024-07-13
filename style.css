@@ -177,6 +177,7 @@ header {
     top: 0;
     transform: rotate(-135deg);
 }
+
 /*-----------------------service subsection css starts here--------------------------*/
 
 .service-subsection{
@@ -249,6 +250,7 @@ header {
     bottom: 0;
     background-image: linear-gradient(to top, #000 40%, transparent);
 }
+
 
 .slider .list .item .content {
     position: absolute;
@@ -376,12 +378,19 @@ header {
         justify-content: start;
     }
     .slider .list .item .content h2 {
-        font-size: 60px;
+        font-size: 40px;
     }
     .arrows {
-        top: 10%;
+        top: 25%;
     }
 }
+/*-----------------slider section mobile responsive css starts here----------------*/
+/* @media only screen and (min-width:150px) and (max-width:1336px){
+    .slider .list .content h2{
+        font-size: 1rem;
+    }
+} */
+/*-----------------slider section mobile responsive css ends here----------------*/
 /*-----------------services section css starts here------------*/
 .service-section{
     padding: 50px 0;
@@ -426,9 +435,9 @@ header {
 .service-section .service-title:before{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 50%;
-    width: 140px;
+    width: 200px;
     height: 3px;
     background-color: #ff4500;
     transform: translateX(-50%);
@@ -436,7 +445,7 @@ header {
 .service-section .service-title:after{
     content: '';
     position: absolute;
-    bottom: -1px;
+    bottom: -4.5px; 
     left: 50%;
     width: 45px;
     height: 6px;
@@ -562,6 +571,12 @@ header {
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* Two columns for screens >= 768px */
         gap: 30px;
+    }
+    .service-row .single-service{
+        margin-top: 25px;
+    }
+    .service-description p{
+        margin-bottom: 30px;    
     }
 }
 
@@ -1102,9 +1117,11 @@ hr{
         left: 100%;
     }
 }
-@media (max-width:700px){
+@media (max-width:1336px){
     footer{
         bottom: unset;
+        overflow-x: hidden;
+        width: 100%;
     }
     .col{
         flex-basis: 25%;
